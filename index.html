@@ -8,50 +8,54 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
+      background-color: #0F172A; /* dark slate background */
+      color: #E2E8F0; /* light gray text */
     }
     header {
-      background-color: #333;
+      background-color: #0F172A;
       padding: 10px 20px;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
     nav ul {
       list-style: none;
       margin: 0;
       padding: 0;
       display: flex;
-      justify-content: flex-end;
     }
     nav ul li {
       margin-left: 20px;
     }
     nav ul li a {
       text-decoration: none;
-      color: #fff;
+      color: #E2E8F0; /* light gray links */
       font-weight: bold;
       transition: color 0.3s ease;
     }
     nav ul li a:hover {
-      color: #9b59b6; /* purple hover effect */
+      color: #F59E0B; /* warm amber hover */
     }
-  </style>
-</head>
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Sections for each nav item -->
-  <section id="about"><h2>About</h2></section>
-  <section id="experience"><h2>Experience</h2></section>
-  <section id="projects"><h2>Projects</h2></section>
-  <section id="skills"><h2>Skills</h2></section>
-  <section id="contact"><h2>Contact</h2></section>
-</body>
-</html>
+    .menu-toggle {
+      display: none;
+      font-size: 24px;
+      color: #E2E8F0;
+      cursor: pointer;
+    }
+    @media (max-width: 768px) {
+      nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #0F172A;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 200px;
+        border: 1px solid #1E293B; /* subtle border for structure */
+      }
+      nav ul.show {
+        display: flex;
+      }
+      nav ul li {
