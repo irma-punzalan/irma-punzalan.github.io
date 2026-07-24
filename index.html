@@ -1,61 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #0F172A; /* dark slate background */
-      color: #E2E8F0; /* light gray text */
-    }
-    header {
-      background-color: #0F172A;
-      padding: 10px 20px;
-    }
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-    }
-    nav ul li {
-      margin-left: 20px;
-    }
-    nav ul li a {
-      text-decoration: none;
-      color: #E2E8F0; /* light gray links */
-      font-weight: bold;
-      transition: color 0.3s ease;
-    }
-    nav ul li a:hover {
-      color: #F59E0B; /* warm amber hover */
-    }
-    .menu-toggle {
-      display: none;
-      font-size: 24px;
-      color: #E2E8F0;
-      cursor: pointer;
-    }
-    @media (max-width: 768px) {
-      nav ul {
-        display: none;
-        flex-direction: column;
-        background-color: #0F172A;
-        position: absolute;
-        top: 60px;
-        right: 20px;
-        width: 200px;
-        border: 1px solid #1E293B; /* subtle border for structure */
-      }
-      nav ul.show {
-        display: flex;
-      }
-      nav ul li {
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irma Punzalan - Interactive CV</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome used for precise UI social icons -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+</head>
+<body>
+
+    <div class="cv-container">
+        
+        <!-- LEFT COLUMN: Profile and Video/Media Area -->
+        <div class="left-column">
+            
+            <!-- Interactive Video Wrapper -->
+            <div class="video-wrapper">
+                <div class="mock-device">
+                    <div class="camera-notch"></div>
+                    <div class="video-screen">
+                        <!-- Custom CSS landscape styling matching the layout -->
+                        <div class="vector-landscape">
+                            <div class="sky">
+                                <div class="cloud cloud-1"></div>
+                                <div class="cloud cloud-2"></div>
+                            </div>
+                            <div class="mountains">
+                                <div class="mountain m-1"></div>
+                                <div class="mountain m-2"></div>
+                            </div>
+                        </div>
+                        <!-- Video Controls -->
+                        <div class="video-controls">
+                            <button class="control-btn" aria-label="Play/Pause"><i class="fas fa-play"></i></button>
+                            <button class="control-btn" aria-label="Mute"><i class="fas fa-volume-up"></i></button>
+                            <div class="progress-bar"><div class="progress"></div></div>
+                            <button class="control-btn fullscreen" aria-label="Fullscreen"><i class="fas fa-expand"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Profile Info Banner -->
+            <div class="profile-header">
+                <h1 class="candidate-name">Irma Punzalan</h1>
+                <p class="candidate-title">APPLICATION SUPPORT ENGINEER</p>
+            </div>
+
+            <!-- Social and Contact Hub -->
+            <div class="connect-box">
+                <h3 class="connect-title">CONNECT WITH ME</h3>
+                <div class="social-links">
+                    <a href="mailto:your.email@example.com" class="social-icon" aria-label="Email Me">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="social-icon" aria-label="LinkedIn Profile">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Schedule Meeting">
+                        <i class="fas fa-calendar-alt"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- RIGHT COLUMN: Core CV Data Content -->
+        <div class="right-column">
+            
+            <!-- About Me Block -->
+            <section class="cv-section">
+                <h2 class="section-title">ABOUT ME</h2>
+                <p class="section-text">
+                    I am an Application Support Engineer with over seven years of experience supporting enterprise applications. 
+                    Throughout my career at Emapta and Accenture, I've worked on incident resolution, production support, 
+                    DevOps deployments, and application maintenance.
+                </p>
+            </section>
+
+            <!-- Experience Block -->
+            <section class="cv-section">
+                <h2 class="section-title">EXPERIENCE</h2>
+                <div class="timeline-item">
+                    <span class="timeline-date">2022 - Present</span>
+                    <span class="timeline-desc"><strong>Enterprise Service Engineer</strong> - EMAPTA</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">2019 - 2022</span>
+                    <span class="timeline-desc"><strong>Application Development Analyst</strong> - Accenture</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">2018 - 2019</span>
+                    <span class="timeline-desc"><strong>System Developer</strong> - Asian Consulting Group</span>
+                </div>
+            </section>
+
+            <!-- Skills Block -->
+            <section class="cv-section">
+                <h2 class="section-title">SKILLS</h2>
+                <p class="section-text skills-list">
+                    <strong>ITSM:</strong> Jira, Salesforce, Servicenow <br>
+                    <strong>Languages:</strong> HTML, CSS, JavaScript, Java <br>
+                    <strong>DB Management:</strong> SQL, PL/SQL <br>
+                    <strong>Framework:</strong> Vue.js, Angular <br>
+                    <strong>Version Control:</strong> Git, SVN <br>
+                    <strong>Others:</strong> AWS, Azure DevOps, Confluence, Supply Chain Management
+                </p>
+            </section>
+
+            <!-- Education Block -->
+            <section class="cv-section">
+                <h2 class="section-title">EDUCATION</h2>
+                <div class="timeline-item">
+                    <span class="timeline-date">2018</span>
+                    <span class="timeline-desc">Bachelor of Science in Information Technology</span>
+                </div>
+            </section>
+
+            <!-- Call to Action Button Layout Element -->
+            <div class="action-footer">
+                <a href="#" class="btn-resume" download>RESUME</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
