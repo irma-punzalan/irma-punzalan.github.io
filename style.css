@@ -29,53 +29,23 @@ body {
     border-right: 1px solid #e0e0e0;
 }
 
-/* Widescreen Video Structure */
-.video-container-wrapper {
+/* Widescreen Video Frame Container - No phone frame restrictions */
+.video-banner-container {
     width: 100%;
-    max-width: 440px; /* Constrains phone scale to match reference image */
-    margin: 0 auto 24px auto;
-}
-
-/* Landscape Device Frame matching image reference layout */
-.landscape-mock-device {
-    background: #000000;
-    border-radius: 28px;
-    padding: 14px 24px; /* Creates thick phone bezel side borders */
     position: relative;
-    width: 100%;
-    aspect-ratio: 16 / 9; /* Rigidly locks video element container layout to landscape */
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Left-side power/notch hardware ornament from layout graphic */
-.device-side-button {
-    width: 4px;
-    height: 32px;
-    background: #1a1a1a;
-    border-radius: 4px 0 0 4px;
-    position: absolute;
-    left: -4px;
-    top: 22%;
-}
-
-/* Secure Inner Screen Boundary Box */
-.video-screen-canvas {
-    width: 100%;
-    height: 100%;
-    background: #000000;
-    border-radius: 12px;
-    position: relative;
+    aspect-ratio: 16 / 9; /* Rigidly holds the exact wide format of your video file */
+    background-color: #0b1a30; /* Dark blue background matching your video stream */
+    border-radius: 8px; /* Smooth rounded corners */
     overflow: hidden;
+    margin: 0 auto 24px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* Widescreen Video Enforcement styling */
 .landscape-video-player {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Prevents visual clipping or distortion scaling */
+    object-fit: contain; /* Keeps text layout and portrait fully visible without cropping */
     display: block;
 }
 
@@ -270,8 +240,5 @@ body {
     .right-col {
         width: 100%;
         padding: 30px 20px;
-    }
-    .video-container-wrapper {
-        max-width: 480px; /* Expands device dimensions slightly on responsive block scales */
     }
 }
