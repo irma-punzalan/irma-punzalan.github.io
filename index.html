@@ -1,146 +1,1618 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Irma Punzalan | Interactive CV Dashboard</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://tailwindcss.com"></script>
-    <!-- Lucide Icons CDN -->
-    <script src="https://unpkg.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        darkBg: '#0b0f19',
-                        darkCard: '#1e293b',
-                        techCyan: '#06b6d4',
-                        techPurple: '#3b82f6'
-                    },
-                    boxShadow: {
-                        'glow-cyan': '0 0 15px rgba(6, 182, 212, 0.4)',
-                        'glow-purple': '0 0 15px rgba(59, 130, 246, 0.4)',
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        .glow-hover:hover {
-            box-shadow: 0 0 25px rgba(6, 182, 212, 0.3);
-            border-color: #06b6d4;
-        }
-    </style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Irma Punzalan | Enterprise Service Engineer</title>
+
+    <meta name="description"
+          content="Enterprise Service Engineer specializing in Application Support, DevOps, Cloud Technologies, AI Solutions and Customer Success.">
+
+    <meta name="keywords"
+          content="Irma Punzalan, Application Support, Enterprise Support, DevOps, Azure, AWS, AI Engineer, OpenAI, Cloud Engineer">
+
+    <meta name="author"
+          content="Irma Punzalan">
+
+    <!-- OpenGraph -->
+
+    <meta property="og:title"
+          content="Irma Punzalan Portfolio">
+
+    <meta property="og:description"
+          content="Enterprise Service Engineer | AI | Cloud | DevOps">
+
+    <meta property="og:image"
+          content="assets/profile.jpg">
+
+    <meta property="og:type"
+          content="website">
+
+    <!-- Favicon -->
+
+    <link rel="icon"
+          href="assets/favicon.ico">
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- AOS -->
+
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css"
+          rel="stylesheet">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+          href="style.css">
+
 </head>
-<body class="bg-darkBg text-slate-100 font-sans antialiased selection:bg-cyan-500 selection:text-white min-h-screen">
 
-    <!-- Main Container -->
-    <main class="max-w-6xl mx-auto px-4 py-8 md:py-16 space-y-12">
+<body>
 
-        <!-- SECTION 1: HERO & VIDEO SPLIT -->
-        <section id="hero" class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-slate-900/50 p-6 md:p-8 rounded-2xl border border-slate-800">
-            <!-- Left Side: Bio & Info -->
-            <div class="lg:col-span-7 space-y-6">
-                <div class="space-y-2">
-                    <span class="text-sm font-semibold tracking-widest text-cyan-400 uppercase">Available for Hire</span>
-                    <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-white">Irma Punzalan</h1>
-                    <p class="text-xl md:text-2xl font-medium bg-gradient-to-r innovators from-cyan-400 to-blue-500 bg-clip-text text-transparent">Application Support Engineer</p>
+<div class="gradient-bg"></div>
+
+<!-- ========================= -->
+<!-- NAVIGATION -->
+<!-- ========================= -->
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+
+<h2>Irma<span>.</span></h2>
+
+</div>
+
+<ul class="nav-links">
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#experience">Experience</a></li>
+
+<li><a href="#projects">Projects</a></li>
+
+<li><a href="#skills">Skills</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+<div class="nav-buttons">
+
+<a href="assets/resume.pdf"
+   class="btn-outline"
+   download>
+
+Resume
+
+</a>
+
+<a href="YOUR_GOOGLE_CALENDAR_LINK"
+   target="_blank"
+   class="btn-primary">
+
+Schedule Call
+
+</a>
+
+</div>
+
+<div class="hamburger">
+
+<i class="fas fa-bars"></i>
+
+</div>
+
+</nav>
+
+</header>
+
+<!-- ========================= -->
+<!-- HERO -->
+<!-- ========================= -->
+
+<section class="hero">
+
+<div class="hero-left"
+     data-aos="fade-right">
+
+<p class="tag">
+
+Available for Full-Time • Remote • Hybrid
+
+</p>
+
+<h1>
+
+Hi, I'm
+
+<span>Irma Punzalan</span>
+
+</h1>
+
+<h2>
+
+Enterprise Service Engineer
+
+<br>
+
+Application Support
+
+<br>
+
+DevOps
+
+<br>
+
+Artificial Intelligence
+
+</h2>
+
+<p class="hero-description">
+
+I have over seven years of experience delivering enterprise application support,
+software development, DevOps, cloud operations, and AI-powered solutions.
+
+I specialize in solving complex production issues, improving customer satisfaction,
+and building intelligent solutions using Azure OpenAI and cloud technologies.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="YOUR_GOOGLE_CALENDAR_LINK"
+   target="_blank"
+   class="btn-primary">
+
+<i class="fa-solid fa-calendar-days"></i>
+
+Schedule Interview
+
+</a>
+
+<a href="assets/resume.pdf"
+   class="btn-outline"
+   download>
+
+<i class="fa-solid fa-file-arrow-down"></i>
+
+Download Resume
+
+</a>
+
+</div>
+
+<div class="social-icons">
+
+<a href="YOUR_GITHUB"
+   target="_blank">
+
+<i class="fab fa-github"></i>
+
+</a>
+
+<a href="YOUR_LINKEDIN"
+   target="_blank">
+
+<i class="fab fa-linkedin"></i>
+
+</a>
+
+<a href="mailto:YOUR_EMAIL">
+
+<i class="fas fa-envelope"></i>
+
+</a>
+
+</div>
+
+<div class="quick-stats">
+
+<div class="stat-card">
+
+<h3>7+</h3>
+
+<p>Years Experience</p>
+
+</div>
+
+<div class="stat-card">
+
+<h3>1000+</h3>
+
+<p>Support Cases</p>
+
+</div>
+
+<div class="stat-card">
+
+<h3>70+</h3>
+
+<p>AI Tools</p>
+
+</div>
+
+<div class="stat-card">
+
+<h3>Top</h3>
+
+<p>Performer</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="hero-right"
+     data-aos="fade-left">
+
+<div class="profile-card glass">
+
+<img src="assets/profile.jpg"
+     alt="Irma Punzalan">
+
+<div class="profile-status">
+
+<span class="status-dot"></span>
+
+Available for Opportunities
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- VIDEO INTRODUCTION -->
+<!-- ========================= -->
+
+<section id="video"
+         class="video-section">
+
+<div class="section-title">
+
+<h2>
+
+Video Introduction
+
+</h2>
+
+<p>
+
+Get to know me in less than two minutes.
+
+</p>
+
+</div>
+
+<div class="video-container glass">
+
+<!-- OPTION 1 -->
+
+<video controls
+       poster="assets/profile.jpg">
+
+<source src="assets/intro.mp4"
+        type="video/mp4">
+
+Your browser does not support the video tag.
+
+</video>
+
+<!-- OPTION 2
+
+<iframe
+width="100%"
+height="500"
+src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+title="Introduction"
+allowfullscreen>
+</iframe>
+
+-->
+
+</div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- ABOUT -->
+<!-- ========================================= -->
+
+<section id="about" class="about section">
+
+    <div class="section-header" data-aos="fade-up">
+
+        <span class="section-tag">
+            About Me
+        </span>
+
+        <h2>
+            Solving Complex Enterprise Problems with Modern Technology
+        </h2>
+
+        <p>
+
+            I am an Enterprise Service Engineer with over seven years of experience in
+            enterprise application support, software development, DevOps, cloud technologies,
+            and AI-powered solutions.
+
+            My background combines strong technical troubleshooting with customer-focused
+            communication, enabling me to resolve complex production issues while improving
+            operational efficiency and customer satisfaction.
+
+        </p>
+
+    </div>
+
+    <div class="about-grid">
+
+        <div class="glass about-card"
+             data-aos="fade-right">
+
+            <h3>
+
+                What I Do
+
+            </h3>
+
+            <ul>
+
+                <li>
+                    Enterprise Application Support
+                </li>
+
+                <li>
+                    Incident & Problem Management
+                </li>
+
+                <li>
+                    Production Support
+                </li>
+
+                <li>
+                    DevOps & CI/CD
+                </li>
+
+                <li>
+                    AI Solutions
+                </li>
+
+                <li>
+                    Cloud Monitoring
+                </li>
+
+                <li>
+                    Customer Success
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="glass about-card"
+             data-aos="fade-up">
+
+            <h3>
+
+                Industries
+
+            </h3>
+
+            <div class="industry-tags">
+
+                <span>Enterprise Software</span>
+
+                <span>Consulting</span>
+
+                <span>Cloud</span>
+
+                <span>Artificial Intelligence</span>
+
+                <span>DevOps</span>
+
+                <span>Customer Support</span>
+
+                <span>SaaS</span>
+
+                <span>Application Services</span>
+
+            </div>
+
+        </div>
+
+        <div class="glass about-card"
+             data-aos="fade-left">
+
+            <h3>
+
+                Core Strengths
+
+            </h3>
+
+            <ul>
+
+                <li>Analytical Thinking</li>
+
+                <li>Problem Solving</li>
+
+                <li>Customer Communication</li>
+
+                <li>Root Cause Analysis</li>
+
+                <li>Continuous Improvement</li>
+
+                <li>Cross-functional Collaboration</li>
+
+                <li>Technical Leadership</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- CAREER HIGHLIGHTS -->
+<!-- ========================================= -->
+
+<section class="highlights section">
+
+    <div class="section-header"
+         data-aos="fade-up">
+
+        <span class="section-tag">
+
+            Career Highlights
+
+        </span>
+
+        <h2>
+
+            Delivering Value Through Technology
+
+        </h2>
+
+    </div>
+
+    <div class="highlight-grid">
+
+        <div class="glass highlight-card"
+             data-aos="zoom-in">
+
+            <i class="fa-solid fa-award"></i>
+
+            <h3>
+
+                Top Performer
+
+            </h3>
+
+            <p>
+
+                Recognized by enterprise clients as one of the top engineers
+                who resolved the highest number of production support cases.
+
+            </p>
+
+        </div>
+
+        <div class="glass highlight-card"
+             data-aos="zoom-in"
+             data-aos-delay="100">
+
+            <i class="fa-solid fa-cloud"></i>
+
+            <h3>
+
+                Cloud Operations
+
+            </h3>
+
+            <p>
+
+                Supported enterprise cloud applications while monitoring
+                performance through AWS CloudWatch, Azure Portal,
+                and Datadog.
+
+            </p>
+
+        </div>
+
+        <div class="glass highlight-card"
+             data-aos="zoom-in"
+             data-aos-delay="200">
+
+            <i class="fa-solid fa-robot"></i>
+
+            <h3>
+
+                AI Engineering
+
+            </h3>
+
+            <p>
+
+                Built and maintained Azure OpenAI solutions
+                with multi-agent orchestration,
+                tool calling,
+                PostgreSQL memory,
+                and observability.
+
+            </p>
+
+        </div>
+
+        <div class="glass highlight-card"
+             data-aos="zoom-in"
+             data-aos-delay="300">
+
+            <i class="fa-solid fa-code-branch"></i>
+
+            <h3>
+
+                DevOps
+
+            </h3>
+
+            <p>
+
+                Managed deployments,
+                Azure DevOps pipelines,
+                Git repositories,
+                production releases,
+                and CI/CD workflows.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- SKILLS -->
+<!-- ========================================= -->
+
+<section id="skills"
+         class="skills section">
+
+    <div class="section-header"
+         data-aos="fade-up">
+
+        <span class="section-tag">
+
+            Technical Skills
+
+        </span>
+
+        <h2>
+
+            Technologies I Work With
+
+        </h2>
+
+    </div>
+
+    <div class="skills-wrapper">
+
+        <div class="glass skill-category">
+
+            <h3>
+
+                Programming
+
+            </h3>
+
+            <div class="chips">
+
+                <span>Java</span>
+                <span>JavaScript</span>
+                <span>TypeScript</span>
+                <span>Python</span>
+                <span>HTML5</span>
+                <span>CSS3</span>
+
+            </div>
+
+        </div>
+
+        <div class="glass skill-category">
+
+            <h3>
+
+                Frameworks
+
+            </h3>
+
+            <div class="chips">
+
+                <span>Angular</span>
+                <span>Vue.js</span>
+                <span>REST APIs</span>
+
+            </div>
+
+        </div>
+
+        <div class="glass skill-category">
+
+            <h3>
+
+                Cloud
+
+            </h3>
+
+            <div class="chips">
+
+                <span>AWS</span>
+                <span>Azure</span>
+                <span>CloudWatch</span>
+                <span>Azure Portal</span>
+                <span>Datadog</span>
+
+            </div>
+
+        </div>
+
+        <div class="glass skill-category">
+
+            <h3>
+
+                DevOps
+
+            </h3>
+
+            <div class="chips">
+
+                <span>Azure DevOps</span>
+                <span>Git</span>
+                <span>CI/CD</span>
+                <span>Release Management</span>
+
+            </div>
+
+        </div>
+
+        <div class="glass skill-category">
+
+            <h3>
+
+                Enterprise Support
+
+            </h3>
+
+            <div class="chips">
+
+                <span>Oracle SQL</span>
+                <span>PostgreSQL</span>
+                <span>Jira</span>
+                <span>Salesforce</span>
+                <span>Incident Management</span>
+                <span>Problem Management</span>
+
+            </div>
+
+        </div>
+
+        <div class="glass skill-category">
+
+            <h3>
+
+                Artificial Intelligence
+
+            </h3>
+
+            <div class="chips">
+
+                <span>Azure OpenAI</span>
+                <span>LLMs</span>
+                <span>Prompt Engineering</span>
+                <span>Tool Calling</span>
+                <span>AI Agents</span>
+                <span>Multi-Agent Systems</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- CERTIFICATIONS -->
+<!-- ========================================= -->
+
+<section class="certifications section">
+
+    <div class="section-header"
+         data-aos="fade-up">
+
+        <span class="section-tag">
+
+            Education & Certifications
+
+        </span>
+
+        <h2>
+
+            Continuous Learning
+
+        </h2>
+
+    </div>
+
+    <div class="cert-grid">
+
+        <div class="glass cert-card">
+
+            <i class="fa-solid fa-graduation-cap"></i>
+
+            <h3>
+
+                Bachelor of Science in Information Technology
+
+            </h3>
+
+            <p>
+
+                Cum Laude
+
+            </p>
+
+            <small>
+
+                Information Technology Excellence Award
+
+            </small>
+
+        </div>
+
+        <div class="glass cert-card">
+
+            <i class="fa-solid fa-certificate"></i>
+
+            <h3>
+
+                Professional Development
+
+            </h3>
+
+            <p>
+
+                Continuously expanding expertise in
+                Artificial Intelligence,
+                Cloud Technologies,
+                Enterprise Support,
+                and DevOps.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================================================= -->
+<!-- EXPERIENCE -->
+<!-- ================================================= -->
+
+<section id="experience" class="experience section">
+
+    <div class="section-header" data-aos="fade-up">
+
+        <span class="section-tag">
+
+            Professional Journey
+
+        </span>
+
+        <h2>
+
+            Building Enterprise Solutions Across Support, Development & AI
+
+        </h2>
+
+        <p>
+
+            From software development to enterprise support and artificial intelligence,
+            my journey has focused on solving business-critical problems,
+            improving operational efficiency,
+            and delivering exceptional customer experiences.
+
+        </p>
+
+    </div>
+
+    <div class="timeline">
+
+        <!-- Current -->
+
+        <div class="timeline-item" data-aos="fade-left">
+
+            <div class="timeline-dot"></div>
+
+            <div class="glass timeline-content">
+
+                <span class="timeline-date">
+
+                    Current
+
+                </span>
+
+                <h3>
+
+                    Enterprise Service Engineer
+
+                </h3>
+
+                <h4>
+
+                    Enterprise Applications • Cloud • AI
+
+                </h4>
+
+                <ul>
+
+                    <li>
+                        Supported enterprise applications across multiple environments.
+                    </li>
+
+                    <li>
+                        Investigated production incidents and root causes.
+                    </li>
+
+                    <li>
+                        Collaborated with development teams on application improvements.
+                    </li>
+
+                    <li>
+                        Managed production deployments using Azure DevOps.
+                    </li>
+
+                    <li>
+                        Monitored cloud environments through AWS CloudWatch and Azure.
+                    </li>
+
+                    <li>
+                        Integrated Azure OpenAI capabilities into enterprise workflows.
+                    </li>
+
+                </ul>
+
+                <div class="timeline-tech">
+
+                    <span>Java</span>
+                    <span>Oracle</span>
+                    <span>AWS</span>
+                    <span>Azure</span>
+                    <span>Azure DevOps</span>
+                    <span>CloudWatch</span>
+
                 </div>
-                
-                <p class="text-slate-400 text-base md:text-lg leading-relaxed">
-                    [Insert your 3-sentence high-impact bio here. E.g., Passionate software engineer specializing in building high-performance, accessible web applications. Proven track record of optimizing client-side systems and leading remote cross-functional engineering teams.]
-                </p>
 
-                <!-- Social Icons & CTA -->
-                <div class="flex flex-wrap items-center gap-4 pt-2">
-                    <a href="#connect" class="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-medium px-6 py-3 rounded-xl transition-all duration-300 transform hover:-translate-y-0.5 shadow-lg shadow-cyan-500/20">
-                        <i data-lucide="calendar" class="w-5 h-5"></i> Book an Interview
-                    </a>
-                    <a href="https://github.com[yourusername]" target="_blank" rel="noopener noreferrer" class="p-3 bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white rounded-xl transition-colors border border-slate-700" aria-label="GitHub">
-                        <i data-lucide="github" class="w-5 h-5"></i>
-                    </a>
-                    <a href="https://linkedin.com[yourusername]" target="_blank" rel="noopener noreferrer" class="p-3 bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white rounded-xl transition-colors border border-slate-700" aria-label="LinkedIn">
-                        <i data-lucide="linkedin" class="w-5 h-5"></i>
-                    </a>
+            </div>
+
+        </div>
+
+        <!-- Accenture -->
+
+        <div class="timeline-item" data-aos="fade-right">
+
+            <div class="timeline-dot"></div>
+
+            <div class="glass timeline-content">
+
+                <span class="timeline-date">
+
+                    Previous
+
+                </span>
+
+                <h3>
+
+                    Application Development Associate
+
+                </h3>
+
+                <h4>
+
+                    Accenture
+
+                </h4>
+
+                <ul>
+
+                    <li>
+
+                        Developed enterprise web applications.
+
+                    </li>
+
+                    <li>
+
+                        Worked in Agile Scrum teams.
+
+                    </li>
+
+                    <li>
+
+                        Created REST API integrations.
+
+                    </li>
+
+                    <li>
+
+                        Performed unit testing.
+
+                    </li>
+
+                    <li>
+
+                        Assisted production support activities.
+
+                    </li>
+
+                </ul>
+
+                <div class="timeline-tech">
+
+                    <span>Angular</span>
+
+                    <span>Vue</span>
+
+                    <span>REST API</span>
+
+                    <span>JavaScript</span>
+
+                    <span>HTML</span>
+
+                    <span>CSS</span>
+
                 </div>
+
             </div>
 
-            <!-- Right Side: Intro Video -->
-            <div class="lg:col-span-5 w-full">
-                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 shadow-xl">
-                    <h3 class="text-sm font-semibold tracking-wide text-slate-400 mb-3 flex items-center gap-2">
-                        <i data-lucide="play-circle" class="w-4 h-4 text-cyan-400"></i> Watch My 60-Second Intro
-                    </h3>
-                    <div class="relative aspect-video rounded-xl overflow-hidden bg-black border border-slate-800 group">
-                        <!-- Replace src with your hosted raw video file link (e.g., from Cloudinary, Imgur, or GitHub Release) -->
-                        <video class="w-full h-full object-cover" controls preload="metadata" poster="https://unsplash.com">
-                            <source src="https://w3schools.com" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
+        </div>
+
+        <!-- First Company -->
+
+        <div class="timeline-item" data-aos="fade-left">
+
+            <div class="timeline-dot"></div>
+
+            <div class="glass timeline-content">
+
+                <span class="timeline-date">
+
+                    Earlier Career
+
+                </span>
+
+                <h3>
+
+                    Software Developer
+
+                </h3>
+
+                <h4>
+
+                    Asian Consulting Group
+
+                </h4>
+
+                <ul>
+
+                    <li>
+
+                        Designed and maintained enterprise software.
+
+                    </li>
+
+                    <li>
+
+                        Developed Oracle SQL procedures.
+
+                    </li>
+
+                    <li>
+
+                        Supported customer deployments.
+
+                    </li>
+
+                    <li>
+
+                        Delivered software enhancements.
+
+                    </li>
+
+                </ul>
+
+                <div class="timeline-tech">
+
+                    <span>Java</span>
+
+                    <span>Oracle SQL</span>
+
+                    <span>Git</span>
+
+                    <span>JavaScript</span>
+
                 </div>
+
             </div>
-        </section>
 
+        </div>
 
-        <!-- SECTION 2: INTERACTIVE KPI METRICS -->
-        <section id="metrics" class="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <!-- Card 1 -->
-            <div class="bg-slate-950 p-6 rounded-2xl border border-slate-800 transition-all duration-300 glow-hover text-center md:text-left">
-                <p class="text-3xl md:text-4xl font-black text-white mb-1 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">[5+]</p>
-                <p class="text-xs md:text-sm font-medium text-slate-400 tracking-wider uppercase">Years Exp</p>
+    </div>
+
+</section>
+
+<!-- ================================================= -->
+<!-- FEATURED PROJECTS -->
+<!-- ================================================= -->
+
+<section id="projects" class="projects section">
+
+    <div class="section-header" data-aos="fade-up">
+
+        <span class="section-tag">
+
+            Featured Projects
+
+        </span>
+
+        <h2>
+
+            Enterprise & AI Solutions
+
+        </h2>
+
+    </div>
+
+    <div class="project-grid">
+
+        <!-- Project 1 -->
+
+        <div class="glass project-card" data-aos="zoom-in">
+
+            <div class="project-header">
+
+                <i class="fa-solid fa-robot"></i>
+
+                <span>
+
+                    Artificial Intelligence
+
+                </span>
+
             </div>
-            <!-- Card 2 -->
-            <div class="bg-slate-950 p-6 rounded-2xl border border-slate-800 transition-all duration-300 glow-hover text-center md:text-left">
-                <p class="text-3xl md:text-4xl font-black text-white mb-1 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">[20+]</p>
-                <p class="text-xs md:text-sm font-medium text-slate-400 tracking-wider uppercase">Projects Done</p>
+
+            <h3>
+
+                Azure OpenAI Enterprise Agent
+
+            </h3>
+
+            <p>
+
+                Built a production AI assistant capable of multi-agent orchestration,
+                Azure OpenAI integration,
+                PostgreSQL conversation memory,
+                structured observability,
+                and enterprise tool calling.
+
+            </p>
+
+            <div class="project-tags">
+
+                <span>Azure OpenAI</span>
+
+                <span>LLM</span>
+
+                <span>Python</span>
+
+                <span>CloudWatch</span>
+
+                <span>PostgreSQL</span>
+
             </div>
-            <!-- Card 3 -->
-            <div class="bg-slate-950 p-6 rounded-2xl border border-slate-800 transition-all duration-300 glow-hover text-center md:text-left">
-                <p class="text-3xl md:text-4xl font-black text-white mb-1 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">[100%]</p>
-                <p class="text-xs md:text-sm font-medium text-slate-400 tracking-wider uppercase">On-Time Delivery</p>
+
+            <div class="project-buttons">
+
+                <a href="YOUR_GITHUB_LINK"
+                   target="_blank">
+
+                    GitHub
+
+                </a>
+
             </div>
-            <!-- Card 4 -->
-            <div class="bg-slate-950 p-6 rounded-2xl border border-slate-800 transition-all duration-300 glow-hover text-center md:text-left">
-                <p class="text-3xl md:text-4xl font-black text-white mb-1 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">[99.9%]</p>
-                <p class="text-xs md:text-sm font-medium text-slate-400 tracking-wider uppercase">Code Uptime</p>
+
+        </div>
+
+        <!-- Project 2 -->
+
+        <div class="glass project-card" data-aos="zoom-in" data-aos-delay="150">
+
+            <div class="project-header">
+
+                <i class="fa-solid fa-cloud"></i>
+
+                <span>
+
+                    Enterprise Support
+
+                </span>
+
             </div>
-        </section>
 
+            <h3>
 
-        <!-- SECTION 3: EXPERIENCE TIMELINE & INTERACTIVE SKILLS -->
-        <section id="details" class="grid grid-cols-1 lg:grid-cols-12 gap-8">
-            <!-- Left Side: Interactive Experience Timeline -->
-            <div class="lg:col-span-7 space-y-6">
-                <h2 class="text-2xl font-bold flex items-center gap-3 text-white">
-                    <i data-lucide="briefcase" class="text-cyan-400"></i> Professional Experience
-                </h2>
-                
-                <div class="relative border-l-2 border-slate-800 ml-4 space-y-6">
-                    <!-- Job 1 (Expandable Accordion) -->
-                    <div class="relative pl-6 group">
-                        <div class="absolute w-4 h-4 bg-cyan-500 rounded-full -left-[9px] top-1.5 border-4 border-darkBg group-hover:scale-125 transition-transform"></div>
-                        <button onclick="toggleAccordion('job1')" class="w-full text-left bg-slate-900/40 hover:bg-slate-900/80 p-4 rounded-xl border border-slate-800/80 transition-all flex justify-between items-start focus:outline-none">
-                            <div>
-                                <span class="text-xs font-semibold px-2 py-0.5 bg-cyan-500/10 text-cyan-400 rounded-md">2024 - Present</span>
-                                <h3 class="text-lg font-bold text-white mt-1">[Senior Frontend Engineer]</h3>
-                                <p class="text-sm text-slate-400">[Tech Company Alpha]</p>
-                            </div>
-                            <i id="icon-job1" data-lucide="chevron-down" class="w-5 h-5 text-slate-500 transition-transform duration-300 mt-1"></i>
-                        </button>
-                        <div id="content-job1" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-slate-950/50 rounded-b-xl border-x border-b border-slate-900 mx-1">
-                            <ul class="p-4 space-y-2 text-sm text-slate-400 list-disc list-inside">
-                                <li>Led development of high-traffic Next.js enterprise web applications.</li>
-                                <li>Improved core Web Vitals metric across core domains by 35%.</li>
-                                <li>Mentored 4 junior frontend developers on robust modern architecture.</li>
-                            </ul>
-                        </div>
-                    </div>
+                Production Application Support
 
-                    <!-- Job 2 (Expandable Accordion) -->
-                    <div class="relative pl-6 group">
-                        <div class="absolute w-4 h-4 bg-blue-500 rounded-full -left-[9px] top-1.5 border-4 border-darkBg group-hover:scale-125 transition-transform"></div>
-                        <button onclick="toggleAccordion('job2')" class="w-full text-left bg-slate-900/40 hover:bg-slate-900/80 p-4 rounded-xl border border-slate-800/80 transition-all flex justify-between items-start focus:outline-none">
-                            <div>
+            </h3>
 
+            <p>
+
+                Delivered enterprise production support,
+                incident management,
+                cloud monitoring,
+                deployment validation,
+                and customer issue resolution.
+
+            </p>
+
+            <div class="project-tags">
+
+                <span>AWS</span>
+
+                <span>Azure</span>
+
+                <span>CloudWatch</span>
+
+                <span>Datadog</span>
+
+            </div>
+
+        </div>
+
+        <!-- Project 3 -->
+
+        <div class="glass project-card" data-aos="zoom-in" data-aos-delay="300">
+
+            <div class="project-header">
+
+                <i class="fa-solid fa-code-branch"></i>
+
+                <span>
+
+                    DevOps
+
+                </span>
+
+            </div>
+
+            <h3>
+
+                CI/CD Release Management
+
+            </h3>
+
+            <p>
+
+                Managed release pipelines,
+                repository versioning,
+                deployments,
+                rollback procedures,
+                and production validation.
+
+            </p>
+
+            <div class="project-tags">
+
+                <span>Azure DevOps</span>
+
+                <span>Git</span>
+
+                <span>CI/CD</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================================================= -->
+<!-- ACHIEVEMENTS -->
+<!-- ================================================= -->
+
+<section class="achievements section">
+
+    <div class="section-header" data-aos="fade-up">
+
+        <span class="section-tag">
+
+            Achievements
+
+        </span>
+
+        <h2>
+
+            Highlights Throughout My Career
+
+        </h2>
+
+    </div>
+
+    <div class="achievement-grid">
+
+        <div class="glass achievement-card">
+
+            <i class="fa-solid fa-trophy"></i>
+
+            <h3>
+
+                Top Performer
+
+            </h3>
+
+            <p>
+
+                Recognized twice by enterprise clients for resolving the highest number of support cases while maintaining excellent customer satisfaction.
+
+            </p>
+
+        </div>
+
+        <div class="glass achievement-card">
+
+            <i class="fa-solid fa-medal"></i>
+
+            <h3>
+
+                Academic Excellence
+
+            </h3>
+
+            <p>
+
+                Graduated Cum Laude and received the Information Technology Excellence Award.
+
+            </p>
+
+        </div>
+
+        <div class="glass achievement-card">
+
+            <i class="fa-solid fa-lightbulb"></i>
+
+            <h3>
+
+                Continuous Learning
+
+            </h3>
+
+            <p>
+
+                Passionate about emerging technologies, particularly Artificial Intelligence, cloud platforms, enterprise systems, and automation.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================================================= -->
+<!-- CONTACT -->
+<!-- ================================================= -->
+
+<section id="contact" class="contact section">
+
+    <div class="section-header" data-aos="fade-up">
+
+        <span class="section-tag">
+            Let's Connect
+        </span>
+
+        <h2>
+            Ready to Build Something Great Together?
+        </h2>
+
+        <p>
+
+            I'm currently open to new opportunities in Enterprise Support,
+            Technical Support, AI Engineering, DevOps, Customer Success,
+            and Cloud Technologies.
+
+        </p>
+
+    </div>
+
+    <div class="contact-grid">
+
+        <!-- Left -->
+
+        <div class="glass contact-card"
+             data-aos="fade-right">
+
+            <h3>
+
+                Contact Information
+
+            </h3>
+
+            <div class="contact-item">
+
+                <i class="fas fa-envelope"></i>
+
+                <div>
+
+                    <strong>Email</strong>
+
+                    <p>
+
+                        YOUR_EMAIL@gmail.com
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="contact-item">
+
+                <i class="fab fa-linkedin"></i>
+
+                <div>
+
+                    <strong>LinkedIn</strong>
+
+                    <p>
+
+                        linkedin.com/in/YOUR_PROFILE
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="contact-item">
+
+                <i class="fab fa-github"></i>
+
+                <div>
+
+                    <strong>GitHub</strong>
+
+                    <p>
+
+                        github.com/Irma-Punzalan
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="contact-item">
+
+                <i class="fas fa-location-dot"></i>
+
+                <div>
+
+                    <strong>Location</strong>
+
+                    <p>
+
+                        Metro Manila, Philippines
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Right -->
+
+        <div class="glass booking-card"
+             data-aos="fade-left">
+
+            <h3>
+
+                Schedule an Interview
+
+            </h3>
+
+            <p>
+
+                Recruiters can instantly book a meeting with me using
+                Google Calendar.
+
+                A Google Meet link will automatically be generated.
+
+            </p>
+
+            <a href="YOUR_GOOGLE_CALENDAR_LINK"
+               target="_blank"
+               class="btn-primary full-width">
+
+                <i class="fa-solid fa-calendar-days"></i>
+
+                Schedule Google Meet
+
+            </a>
+
+            <a href="assets/resume.pdf"
+               download
+               class="btn-outline full-width">
+
+                <i class="fa-solid fa-file-arrow-down"></i>
+
+                Download Resume
+
+            </a>
+
+            <div class="availability">
+
+                <span>
+
+                    🟢 Available for Interviews
+
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================================================= -->
+<!-- FOOTER -->
+<!-- ================================================= -->
+
+<footer>
+
+    <div class="footer-content">
+
+        <h2>
+
+            Irma<span>.</span>
+
+        </h2>
+
+        <p>
+
+            Enterprise Service Engineer
+
+            •
+
+            AI Enthusiast
+
+            •
+
+            DevOps
+
+            •
+
+            Cloud Technologies
+
+        </p>
+
+        <div class="footer-icons">
+
+            <a href="YOUR_GITHUB"
+               target="_blank">
+
+                <i class="fab fa-github"></i>
+
+            </a>
+
+            <a href="YOUR_LINKEDIN"
+               target="_blank">
+
+                <i class="fab fa-linkedin"></i>
+
+            </a>
+
+            <a href="mailto:YOUR_EMAIL">
+
+                <i class="fas fa-envelope"></i>
+
+            </a>
+
+        </div>
+
+        <p class="copyright">
+
+            © 2026 Irma Punzalan.
+
+            Designed & Developed with ❤️
+
+        </p>
+
+    </div>
+
+</footer>
+
+<!-- ================================================= -->
+<!-- BACK TO TOP -->
+<!-- ================================================= -->
+
+<button id="backToTop">
+
+    <i class="fas fa-arrow-up"></i>
+
+</button>
+
+<!-- ================================================= -->
+<!-- AOS -->
+<!-- ================================================= -->
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+
+AOS.init({
+
+    duration:900,
+
+    once:true,
+
+    easing:"ease-in-out"
+
+});
+
+</script>
+
+<!-- ================================================= -->
+<!-- JAVASCRIPT -->
+<!-- ================================================= -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
