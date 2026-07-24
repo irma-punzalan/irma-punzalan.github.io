@@ -3,124 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Irma Punzalan - Interactive CV</title>
+    <title>Irma Punzalan - Portfolio</title>
+    <!-- Linking the external CSS file -->
     <link rel="stylesheet" href="style.css">
-    <!-- FontAwesome used for precise UI social icons -->
-    <link rel="stylesheet" href="https://cloudflare.com">
 </head>
 <body>
 
-    <div class="cv-container">
+    <div class="container">
         
-        <!-- LEFT COLUMN: Profile and Video/Media Area -->
-        <div class="left-column">
-            
-            <!-- Interactive Video Wrapper -->
-            <div class="video-wrapper">
-                <div class="mock-device">
-                    <div class="camera-notch"></div>
-                    <div class="video-screen">
-                        <!-- Custom CSS landscape styling matching the layout -->
-                        <div class="vector-landscape">
-                            <div class="sky">
-                                <div class="cloud cloud-1"></div>
-                                <div class="cloud cloud-2"></div>
+        <!-- LEFT PANELS: Media & Contact Information -->
+        <div class="left-col">
+            <!-- Programmatic CSS Mock Video Player Frame -->
+            <div class="video-container">
+                <div class="video-screen">
+                    <div class="cloud cloud-1"></div>
+                    <div class="cloud cloud-2"></div>
+                    <div class="video-controls">
+                        <div class="play-btn"></div>
+                        <div class="progress-bar">
+                            <div class="progress-fill">
+                                <div class="progress-knob"></div>
                             </div>
-                            <div class="mountains">
-                                <div class="mountain m-1"></div>
-                                <div class="mountain m-2"></div>
-                            </div>
-                        </div>
-                        <!-- Video Controls -->
-                        <div class="video-controls">
-                            <button class="control-btn" aria-label="Play/Pause"><i class="fas fa-play"></i></button>
-                            <button class="control-btn" aria-label="Mute"><i class="fas fa-volume-up"></i></button>
-                            <div class="progress-bar"><div class="progress"></div></div>
-                            <button class="control-btn fullscreen" aria-label="Fullscreen"><i class="fas fa-expand"></i></button>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Profile Info Banner -->
-            <div class="profile-header">
-                <h1 class="candidate-name">Irma Punzalan</h1>
-                <p class="candidate-title">APPLICATION SUPPORT ENGINEER</p>
-            </div>
+            <h1 class="profile-name">Irma Punzalan</h1>
+            <p class="profile-title">Application Support Engineer</p>
 
-            <!-- Social and Contact Hub -->
-            <div class="connect-box">
-                <h3 class="connect-title">CONNECT WITH ME</h3>
-                <div class="social-links">
-                    <a href="mailto:your.email@example.com" class="social-icon" aria-label="Email Me">
-                        <i class="fas fa-envelope"></i>
+            <div class="connect-section">
+                <p class="connect-title">CONNECT WITH ME</p>
+                <div class="social-icons">
+                    <!-- Email Button SVG -->
+                    <a href="mailto:your.email@example.com" class="icon-btn" title="Email Me">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
                     </a>
-                    <a href="https://linkedin.com" target="_blank" class="social-icon" aria-label="LinkedIn Profile">
-                        <i class="fab fa-linkedin-in"></i>
+                    <!-- LinkedIn Button SVG -->
+                    <a href="https://linkedin.com" target="_blank" class="icon-btn" title="LinkedIn Profile">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                        </svg>
                     </a>
-                    <a href="#" class="social-icon" aria-label="Schedule Meeting">
-                        <i class="fas fa-calendar-alt"></i>
+                    <!-- Calendar Button SVG -->
+                    <a href="https://calendly.com" target="_blank" class="icon-btn" title="Schedule Meeting">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2zm-7 5h5v5h-5z"/>
+                        </svg>
                     </a>
                 </div>
+                <a href="#" class="resume-btn">Resume</a>
             </div>
-
         </div>
 
-        <!-- RIGHT COLUMN: Core CV Data Content -->
-        <div class="right-column">
+        <!-- RIGHT PANELS: Professional Bio Content -->
+        <div class="right-col">
             
-            <!-- About Me Block -->
-            <section class="cv-section">
-                <h2 class="section-title">ABOUT ME</h2>
-                <p class="section-text">
+            <div class="section">
+                <h2 class="section-title">About Me</h2>
+                <p class="about-text">
                     I am an Application Support Engineer with over seven years of experience supporting enterprise applications. 
                     Throughout my career at Emapta and Accenture, I've worked on incident resolution, production support, 
                     DevOps deployments, and application maintenance.
                 </p>
-            </section>
+            </div>
 
-            <!-- Experience Block -->
-            <section class="cv-section">
-                <h2 class="section-title">EXPERIENCE</h2>
+            <div class="section">
+                <h2 class="section-title">Experience</h2>
                 <div class="timeline-item">
-                    <span class="timeline-date">2022 - Present</span>
-                    <span class="timeline-desc"><strong>Enterprise Service Engineer</strong> - EMAPTA</span>
+                    <div class="timeline-date">2022 - Present</div>
+                    <div class="timeline-details"><strong>Enterprise Service Engineer</strong> - EMAPTA</div>
                 </div>
                 <div class="timeline-item">
-                    <span class="timeline-date">2019 - 2022</span>
-                    <span class="timeline-desc"><strong>Application Development Analyst</strong> - Accenture</span>
+                    <div class="timeline-date">2019 - 2022</div>
+                    <div class="timeline-details"><strong>Application Development Analyst</strong> - Accenture</div>
                 </div>
                 <div class="timeline-item">
-                    <span class="timeline-date">2018 - 2019</span>
-                    <span class="timeline-desc"><strong>System Developer</strong> - Asian Consulting Group</span>
+                    <div class="timeline-date">2018 - 2019</div>
+                    <div class="timeline-details"><strong>System Developer</strong> - Asian Consulting Group</div>
                 </div>
-            </section>
+            </div>
 
-            <!-- Skills Block -->
-            <section class="cv-section">
-                <h2 class="section-title">SKILLS</h2>
-                <p class="section-text skills-list">
-                    <strong>ITSM:</strong> Jira, Salesforce, Servicenow <br>
-                    <strong>Languages:</strong> HTML, CSS, JavaScript, Java <br>
-                    <strong>DB Management:</strong> SQL, PL/SQL <br>
-                    <strong>Framework:</strong> Vue.js, Angular <br>
-                    <strong>Version Control:</strong> Git, SVN <br>
-                    <strong>Others:</strong> AWS, Azure DevOps, Confluence, Supply Chain Management
-                </p>
-            </section>
+            <div class="section">
+                <h2 class="section-title">Skills</h2>
+                <div class="skills-container">
+                    <div class="skills-group">
+                        <span class="skills-label">ITSM:</span> Jira, Salesforce, Servicenow
+                    </div>
+                    <div class="skills-group">
+                        <span class="skills-label">Languages:</span> HTML, CSS, JavaScript, Java
+                    </div>
+                    <div class="skills-group">
+                        <span class="skills-label">DB Management:</span> SQL, PL/SQL
+                    </div>
+                    <div class="skills-group">
+                        <span class="skills-label">Framework:</span> Vue.js, Angular
+                    </div>
+                    <div class="skills-group">
+                        <span class="skills-label">Version Control:</span> Git, SVN
+                    </div>
+                    <div class="skills-group">
+                        <span class="skills-label">Others:</span> AWS, Azure DevOps, Confluence, Supply Chain Management
+                    </div>
+                </div>
+            </div>
 
-            <!-- Education Block -->
-            <section class="cv-section">
-                <h2 class="section-title">EDUCATION</h2>
+            <div class="section">
+                <h2 class="section-title">Education</h2>
                 <div class="timeline-item">
-                    <span class="timeline-date">2018</span>
-                    <span class="timeline-desc">Bachelor of Science in Information Technology</span>
+                    <div class="timeline-date">2018</div>
+                    <div class="timeline-details"><strong>Bachelor of Science in Information Technology</strong></div>
                 </div>
-            </section>
-
-            <!-- Call to Action Button Layout Element -->
-            <div class="action-footer">
-                <a href="#" class="btn-resume" download>RESUME</a>
             </div>
 
         </div>
