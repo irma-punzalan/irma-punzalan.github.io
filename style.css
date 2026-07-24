@@ -202,3 +202,48 @@ body {
         padding: 30px 20px;
     }
 }
+
+/* Footer Styles */
+.main-footer {
+    background-color: #ffffff;
+    border-top: 1px solid #e0e0e0;
+    padding: 30px 20px;
+    margin-top: auto; /* Pushes footer to bottom if page content is short */
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+    color: #666666;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #2b579a;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: #1e3f72;
+    text-decoration: underline;
+}
+
+/* Mobile Responsiveness for Footer */
+@media (max-width: 850px) {
+    .footer-content {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}
+
