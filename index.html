@@ -13,29 +13,28 @@
         
         <!-- LEFT PANELS: Media & Contact Information -->
 <!-- Landscape Phone Style Video Player -->
-<div class="video-frame">
-    <!-- Top phone speaker notch detail -->
-    <div class="phone-notch"></div>
-    
-    <div class="video-wrapper">
-        <!-- Replace the src URL with your live GitHub video link -->
-        <video id="portfolioVideo" src="https://raw.githubusercontent.com/irma-punzalan/irma-punzalan.github.io/main/Intro%20Video_Compressed.mp4"preload="metadata"></video>
+<div class="video-container-wrapper">
+    <div class="landscape-mock-device">
+        <!-- Structural Camera Notch Button from image layout -->
+        <div class="device-side-button"></div>
         
-        <!-- Design-matching custom controller overlay layout -->
-        <div class="custom-video-controls">
-            <button class="ctrl-play-btn" id="videoPlayBtn" aria-label="Play/Pause"></button>
-            <div class="ctrl-volume-icon"></div>
-            <div class="ctrl-volume-slider"></div>
-            <div class="ctrl-progress-bar">
-                <div class="ctrl-progress-fill">
-                    <div class="ctrl-progress-knob"></div>
-                </div>
+        <div class="video-screen-canvas">
+            <!-- Autoplay Landscape Media Player -->
+            <video class="landscape-video-player" autoplay loop muted playsinline>
+                <source src="https://raw.githubusercontent.com/irma-punzalan/irma-punzalan.github.io/main/Intro%20Video_Compressed.mp4"preload="metadata"" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            
+            <!-- Standard Horizontal UI Overlays overlaying the live stream -->
+            <div class="landscape-video-controls">
+                <button class="ctrl-btn inline-toggle-play" aria-label="Pause"><i class="fas fa-pause"></i></button>
+                <button class="ctrl-btn inline-toggle-mute" aria-label="Unmute"><i class="fas fa-volume-mute"></i></button>
+                <div class="timeline-bar-wrapper"><div class="timeline-progress-fill"></div></div>
+                <button class="ctrl-btn trigger-fs" aria-label="Fullscreen"><i class="fas fa-expand"></i></button>
             </div>
-            <div class="ctrl-fullscreen-icon"></div>
         </div>
     </div>
 </div>
-
 
             <h1 class="profile-name">Irma Punzalan</h1>
             <p class="profile-title">Application Support Engineer</p>
