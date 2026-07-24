@@ -70,7 +70,7 @@
         <!-- RIGHT PANELS: Professional Bio Content -->
         <div class="right-col">
             
-            <div class="section">
+            <div class="section" id="about">
                 <h2 class="section-title">About Me</h2>
                 <p class="about-text">
                     I am an Application Support Engineer with over seven years of experience supporting enterprise applications. 
@@ -79,7 +79,7 @@
                 </p>
             </div>
 
-            <div class="section">
+            <div class="section" id="experience">
                 <h2 class="section-title">Experience</h2>
                 <div class="timeline-item">
                     <div class="timeline-date">2022 - Present</div>
@@ -95,7 +95,7 @@
                 </div>
             </div>
 
-            <div class="section">
+            <div class="section" id="skills">
                 <h2 class="section-title">Skills</h2>
                 <div class="skills-container">
                     <div class="skills-group">
@@ -131,6 +131,18 @@
 
     </div>
 
+    <!-- Main Footer Container (Placed outside main grid container to fix links click layers) -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Irma Punzalan. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#skills">Skills</a>
+            </div>
+        </div>
+    </footer>
+
     <!-- Script logic handler linking the visual button state to the native video track volume controls API -->
     <script>
         const video = document.getElementById('portfolioVideo');
@@ -138,32 +150,19 @@
         const audioPath = document.getElementById('audioPath');
         const audioText = document.getElementById('audioText');
 
-        toggleBtn.addEventListener('click', function() {
+        toggleBtn.addEventListener('click', () => {
             if (video.muted) {
                 video.muted = false;
-                video.volume = 1.0;
                 audioText.innerText = "Mute";
-                // Updates vector graphic shape mapping to Unmuted Speaker symbol state
+                // Changes icon to speaker high volume state
                 audioPath.setAttribute('d', 'M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z');
             } else {
                 video.muted = true;
                 audioText.innerText = "Unmute";
-                // Updates vector graphic shape mapping to Muted Speaker symbol state
+                // Reverts back to muted icon state style 
                 audioPath.setAttribute('d', 'M16.5 12c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77zM4.34 2.93L2.93 4.34 7.59 9H3v6h4l5 5v-6.59l4.18 4.18c-.65.49-1.38.88-2.18 1.11v2.06c1.35-.3 2.59-.95 3.61-1.83l2.13 2.13 1.41-1.41L4.34 2.93zM10 15.17L7.83 13H5v-2h2.83l.88-.88L10 11.42v3.75z');
             }
         });
     </script>
-
 </body>
-<footer class="main-footer">
-    <div class="footer-content">
-        <p>&copy; 2026 Irma Punzalan. All rights reserved.</p>
-        <div class="footer-links">
-            <a href="#about">About</a>
-            <a href="#experience">Experience</a>
-            <a href="#skills">Skills</a>
-        </div>
-    </div>
-</footer>
-
 </html>
