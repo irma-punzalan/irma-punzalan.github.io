@@ -12,12 +12,30 @@
     <div class="container">
         
         <!-- LEFT PANELS: Media & Contact Information -->
-<div class="video-container" style="padding: 0; background: none;">
-    <video width="100%" height="100%" controls style="border-radius: 24px; object-fit: cover; display: block; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
-        <source src="https://raw.githubusercontent.com/irma-punzalan/irma-punzalan.github.io/main/Intro%20Video_Compressed.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+<!-- Landscape Phone Style Video Player -->
+<div class="video-frame">
+    <!-- Top phone speaker notch detail -->
+    <div class="phone-notch"></div>
+    
+    <div class="video-wrapper">
+        <!-- Replace the src URL with your live GitHub video link -->
+        <video id="portfolioVideo" src="https://raw.githubusercontent.com/irma-punzalan/irma-punzalan.github.io/main/Intro%20Video_Compressed.mp4"preload="metadata"></video>
+        
+        <!-- Design-matching custom controller overlay layout -->
+        <div class="custom-video-controls">
+            <button class="ctrl-play-btn" id="videoPlayBtn" aria-label="Play/Pause"></button>
+            <div class="ctrl-volume-icon"></div>
+            <div class="ctrl-volume-slider"></div>
+            <div class="ctrl-progress-bar">
+                <div class="ctrl-progress-fill">
+                    <div class="ctrl-progress-knob"></div>
+                </div>
+            </div>
+            <div class="ctrl-fullscreen-icon"></div>
+        </div>
+    </div>
 </div>
+
 
             <h1 class="profile-name">Irma Punzalan</h1>
             <p class="profile-title">Application Support Engineer</p>
