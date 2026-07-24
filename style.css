@@ -155,14 +155,16 @@ body {
 /* Timeline grid setup */
 .timeline-item {
     display: grid;
-    grid-template-columns: 110px 1fr;
-    margin-bottom: 12px;
-    font-size: 1.05rem;
+    grid-template-columns: 160px 1fr; /* Increased to fit "2022 - Present" on one line */
+    margin-bottom: 24px; 
+    font-size: 1.1rem;
+    line-height: 1.4;
 }
 
 .timeline-date {
     font-weight: bold;
-    color: #444444;
+    color: #333333;
+    white-space: nowrap; /* Forces text to stay on a single line */
 }
 
 .timeline-details {
