@@ -29,11 +29,10 @@ body {
     border-right: 1px solid #e0e0e0;
 }
 
-/* Mock Video Player styling using pure CSS */
-/* Container Box ensuring it never over-extends vertically */
+/* Widescreen Video Structure */
 .video-container-wrapper {
     width: 100%;
-    max-width: 440px; /* Constraints base sizing to image dimensions */
+    max-width: 440px; /* Constrains phone scale to match reference image */
     margin: 0 auto 24px auto;
 }
 
@@ -41,10 +40,10 @@ body {
 .landscape-mock-device {
     background: #000000;
     border-radius: 28px;
-    padding: 14px 24px; /* Creates thick phone bezel borders on left/right */
+    padding: 14px 24px; /* Creates thick phone bezel side borders */
     position: relative;
     width: 100%;
-    aspect-ratio: 16 / 9; /* Strictly locks element to widescreen landscape format */
+    aspect-ratio: 16 / 9; /* Rigidly locks video element container layout to landscape */
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
     display: flex;
     align-items: center;
@@ -76,7 +75,7 @@ body {
 .landscape-video-player {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Forces file to fit boundaries perfectly without stretching */
+    object-fit: cover; /* Prevents visual clipping or distortion scaling */
     display: block;
 }
 
@@ -116,65 +115,10 @@ body {
 }
 
 .timeline-progress-fill {
-    width: 15%; /* Linked value updated seamlessly via script */
+    width: 0%; /* Tracks running code state inside script.js */
     height: 100%;
-    background: #e53e3e; /* Matching orange-red timeline bar from reference graphic */
+    background: #e53e3e; /* Red playback tracking indicator from image layout */
     border-radius: 3px;
-}
-
-
-/* Decorative cloud graphics in the vector background */
-.cloud {
-    background: rgba(255,255,255,0.8);
-    border-radius: 20px;
-    position: absolute;
-}
-.cloud-1 { width: 60px; height: 25px; top: 15%; left: 15%; }
-.cloud-2 { width: 80px; height: 35px; top: 20%; right: 20%; }
-
-.video-controls {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    right: 20px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.play-btn {
-    width: 0;
-    height: 0;
-    border-top: 8px solid transparent;
-    border-left: 14px solid #fff;
-    border-bottom: 8px solid transparent;
-    cursor: pointer;
-}
-
-.progress-bar {
-    flex-grow: 1;
-    height: 4px;
-    background: rgba(255,255,255,0.4);
-    border-radius: 2px;
-    position: relative;
-}
-
-.progress-fill {
-    width: 70%;
-    height: 100%;
-    background: #ff0000;
-    border-radius: 2px;
-    position: relative;
-}
-
-.progress-knob {
-    width: 10px;
-    height: 10px;
-    background: #ff0000;
-    border-radius: 50%;
-    position: absolute;
-    right: -5px;
-    top: -3px;
 }
 
 /* Left Side Typography */
@@ -312,7 +256,7 @@ body {
     font-weight: bold;
 }
 
-/* Desktop Layout Adaptability */
+/* Mobile Layout Adaptability Rules */
 @media (max-width: 850px) {
     .container {
         flex-direction: column;
@@ -327,7 +271,7 @@ body {
         width: 100%;
         padding: 30px 20px;
     }
-    .video-container {
-        max-width: 500px;
+    .video-container-wrapper {
+        max-width: 480px; /* Expands device dimensions slightly on responsive block scales */
     }
 }
